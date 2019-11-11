@@ -1,5 +1,6 @@
 header {
-    width: 100% height: auto;
+    width: 100%
+    height: auto;
 }
 h1 {
     text-align: center;
@@ -19,7 +20,6 @@ nav ul {
 }
 nav ul li {
     float: none;
-    width: 50%;
     background-color: grey;
     padding: 5px;
     margin-top: 10px;
@@ -31,13 +31,23 @@ nav ul li a {
     text-align: center;
     font-size: 25px;
 }
-#seccionHombre, #seccionMujer {
+#carouselExampleFade{
+    padding: 10px;
+    width: 100%;
+}
+#seccionHombre{
+    width: 100%;
+}
+#seccionMujer{
+    width: 100%;
+}
+#seccionNovedades{
     width: 100%;
 }
 h2 {
     position: relative;
     bottom: 50%;
-    color: white;
+    color: grey;
     font-size: 30px;
     text-align: center;
 }
@@ -91,6 +101,59 @@ footer{
 #redes ul li a {
 	float: left;
 }
-#ubicacion{
+#mapa{
 	width: 100%;
+}
+
+@media all and (min-width: 720px){
+    nav ul {
+    list-style-type: none;
+    overflow: hidden;
+
+}
+nav ul li {
+    float: left;
+    background-color: grey;
+    width: 24%;
+    margin-left: 5px;
+}
+nav ul li a {
+    display: inline;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}
+.container-fluid{
+
+}
+.hombre{
+    float: left;
+    width: 100%;
+}
+.mujer{
+    float: right;    
+    width: 100%;
+
+}
+.novedades{
+    float: left;
+    width: 100%;
+}
+footer{
+    width: 100%;
+}
+#contacto{
+    width: 50%;
+    float: left;
+    padding-left: 0px;
+}
+
+#redes{
+width: 50%;
+float: left;
+}
+#ubicacion{
+width: 100%;
+text-align: center;
+}
 }
