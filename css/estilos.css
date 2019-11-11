@@ -1,0 +1,96 @@
+header {
+    width: 100% height: auto;
+}
+h1 {
+    text-align: center;
+    padding-bottom: 10px;
+}
+.logo {
+    width: 60%;
+    height: 60%;
+    border-radius: 100%;
+    margin-left: 25%;
+    padding-top: 5px;
+}
+nav ul {
+    list-style-type: none;
+    overflow: hidden;
+    padding: 0px;
+}
+nav ul li {
+    float: none;
+    width: 50%;
+    background-color: grey;
+    padding: 5px;
+    margin-top: 10px;
+    width: 100%;
+}
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}
+#seccionHombre, #seccionMujer {
+    width: 100%;
+}
+h2 {
+    position: relative;
+    bottom: 50%;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+p {
+    position: relative;
+    bottom: 50%;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+button {
+    position: relative;
+    bottom: 50%;
+    color: red;
+    font-size: 30px;
+    left: 25%;
+    width: 50%;
+}
+footer{
+	background-color: ;
+}
+#contacto ul {
+    list-style-type: none;
+    overflow: hidden;
+}
+#contacto ul li {
+    float: none;
+;
+}
+#contacto ul li a {
+    display: block;
+
+}
+#redes ul {
+    list-style-type: none;
+    overflow: hidden;
+    padding: 0px;
+}
+#redes ul li {
+    float: none;
+    width: 50%;
+    padding: 5px;
+    margin-top: 10px;
+    width: 100%;
+}
+#redes ul li img {
+    display: block;
+	width: 30px;
+	border-radius:100px;
+}
+#redes ul li a {
+	float: left;
+}
+#ubicacion{
+	width: 100%;
+}
