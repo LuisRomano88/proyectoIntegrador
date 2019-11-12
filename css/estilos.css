@@ -1,10 +1,11 @@
 header {
     width: 100%
-    height: auto;
+ height: auto;
 }
 h1 {
     text-align: center;
     padding-bottom: 10px;
+    font-size: 40px;
 }
 .logo {
     width: 60%;
@@ -31,129 +32,162 @@ nav ul li a {
     text-align: center;
     font-size: 25px;
 }
-#carouselExampleFade{
+#carouselExampleFade {
     padding: 10px;
     width: 100%;
 }
-#seccionHombre{
-    width: 100%;
-}
-#seccionMujer{
-    width: 100%;
-}
-#seccionNovedades{
-    width: 100%;
-}
-h2 {
-    position: relative;
-    bottom: 50%;
-    color: grey;
-    font-size: 30px;
-    text-align: center;
-}
-p {
-    position: relative;
-    bottom: 50%;
-    color: white;
-    font-size: 30px;
-    text-align: center;
-}
-button {
-    position: relative;
-    bottom: 50%;
-    color: red;
-    font-size: 30px;
-    left: 25%;
-    width: 50%;
-}
-footer{
-	background-color: ;
-}
-#contacto ul {
-    list-style-type: none;
+.container-fluid {
     overflow: hidden;
-}
-#contacto ul li {
-    float: none;
-;
-}
-#contacto ul li a {
-    display: block;
-
-}
-#redes ul {
-    list-style-type: none;
-    overflow: hidden;
-    padding: 0px;
-}
-#redes ul li {
-    float: none;
-    width: 50%;
-    padding: 5px;
-    margin-top: 10px;
     width: 100%;
+    background-color: red;
 }
-#redes ul li img {
-    display: block;
-	width: 30px;
-	border-radius:100px;
+.hombre {
+    width: 100%;
+    padding: 10px;
 }
-#redes ul li a {
-	float: left;
+#botonCatalogo{
+    position: relative;
+    left: 40%;
+    background-color: transparent;
+    border-radius: 100px;
 }
-#mapa{
-	width: 100%;
+.mujer {
+    width: 100%;
+    padding: 10px;
 }
-
-@media all and (min-width: 720px){
+.novedades {
+    width: 100%;
+    padding: 10px;
+}
+#imgSeccionHombre, #imgSeccionMujer {
+    width: 100%;
+    padding: 10px;
+}
+#imgSeccionNovedades {
+    width: 100%;
+    padding: 10px;
+}
+footer {
+    background-color: ;
+}
+@media all and (min-width: 768px) {
     nav ul {
-    list-style-type: none;
-    overflow: hidden;
+        list-style-type: none;
+        overflow: hidden;
+    }
+    nav ul li {
+        float: left;
+        background-color: grey;
+        width: 24%;
+        margin-left: 5px;
+    }
+    nav ul li a {
+        display: inline;
+        color: white;
+        text-align: center;
+        font-size: 25px;
+    }
+    .container-fluid {
+        overflow: hidden;
+        width: 100%;
+    }
+    .hombre {
+        float: left;
+        width: 50%;
+        height: auto;
+    }
+    .mujer {
+        float: left;
+        height: auto;
+        width: 50%;
+    }
+    #imgSeccionHombre, #imgSeccionMujer, #imgSeccionNovedades {
+        width: 200%;
+        height: 500px;
+        padding: 10px;
+    }
+    .novedades {
+        width: 100%;
+    }
+    footer {
 
+    }
+
+   
+    }
+    @media all and (min-width: 992px) {
+
+        .container-fluid {
+        overflow: hidden;
+        width: 100%;
+        background-color: red;
+    }
+    .hombre {
+        float: left;
+        width: 33%;
+        height: auto;
+
+    }
+    .mujer {
+        float: left;
+        height: auto;
+        width: 33%;
+
+    }
+    #imgSeccionHombre, #imgSeccionMujer, #imgSeccionNovedades {
+        width: 300px;
+        height: 500px;
+        padding: 10px;
+    }
+    .novedades {
+        width: 33%;
+        float: left;
+    }
+    #botonCatalogo{
+    position: relative;
+    left: 40%;
+    background-color: transparent;
+    border-radius: 100px;
 }
-nav ul li {
-    float: left;
+}
+
+/*---------Estilo Seccion Hombres------------*/
+
+.cajaRemeras{
+    width: 100%;
+    padding: 25%;
+}
+
+.cajaPantalones{
+    width: 100%;
+    padding: 25%;
+}
+.cajaCalzados{
+    width: 100%;
+    padding: 25%;
+}
+
+#h2Hombres{
     background-color: grey;
-    width: 24%;
-    margin-left: 5px;
-}
-nav ul li a {
-    display: inline;
     color: white;
+    width: 100%;
     text-align: center;
-    font-size: 25px;
-}
-.container-fluid{
-
-}
-.hombre{
-    float: left;
-    width: 100%;
-}
-.mujer{
-    float: right;    
-    width: 100%;
-
-}
-.novedades{
-    float: left;
-    width: 100%;
-}
-footer{
-    width: 100%;
-}
-#contacto{
-    width: 50%;
-    float: left;
-    padding-left: 0px;
 }
 
-#redes{
-width: 50%;
-float: left;
+@media all and (min-width: 992px){
+    .cajaRemeras{
+    width: 30%;
+    float: left;
+
 }
-#ubicacion{
-width: 100%;
-text-align: center;
+
+.cajaPantalones{
+    width: 30%;
+    float: left;
+}
+.cajaCalzados{
+    width: 30%;
+    float: left;
 }
 }
+
