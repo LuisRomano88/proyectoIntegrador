@@ -1,46 +1,8 @@
-body {
-  margin: 0;
-  font-family: 'Muli', sans-serif;
-  background-color:#1c2230;
-}
-
-header {
-  background-color: #3a383d;
-}
-
-header .logo {
-  width: 110px;
-  border-radius: 90px;
-}
-
-header a {
-  font-weight: bolder;
-}
-
 .form-header h1 {
   color: white;
   font-weight: 800;
 }
 
-#footer, #footer.container div li a {
-  color: white;
-  background-color: #161416;
-}
-
-/* NOTE: Formulario modal de CONSULTA*/
-#footer #formularioModal {
-  color: black;
-}
-
-#contactUs a.nav-link.active {
-  padding: 0;
-}
-
-/* NOTE: link de modal para location */
-#contactUs .nav-link {
-  padding: 0;
-}
-
-#contactUs #datos, .modal-title{
-  color: black;
+.container {
+  margin-bottom: 100px;
 }
