@@ -4,17 +4,17 @@
       <div id="aboutUs" class="col-12 col-sm-4 col-md-4">
         <h5>About Us</h5>
         <ul class="list-unstyled quick-links">
-          <li><a href="home.php"><i class="fa fa-angle-double-right"></i>Home</a></li>
-          <li><a href="catalog.php"><i class="fa fa-angle-double-right"></i>Catalog</a></li>
-          <li><a href="faq.php"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+          <li><a href="home.php"></i>Home</a></li>
+          <li><a href="catalog.php"></i>Catalog</a></li>
+          <li><a href="faq.php"></i>FAQ</a></li>
         </ul>
       </div>
       <div id="socNetworks" class="col-12 col-sm-4 col-md-4">
         <h5>Social Networks</h5>
         <ul class="list-unstyled quick-links">
-          <li><a href="https://www.instagram.com/"><i class="fa fa-angle-double-right"></i>Facebook</a></li>
-          <li><a href="https://www.facebook.com/"><i class="fa fa-angle-double-right"></i>Instagram</a></li>
-          <li><a href="https://www.twitter.com/"><i class="fa fa-angle-double-right"></i>Twitter</a></li>
+          <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+          <li><a href="https://www.instagram.com/" target="_blank"></i>Instagram</a></li>
+          <li><a href="https://www.twitter.com/" target="_blank">Twitter</a></li>
         </ul>
       </div>
       <div id="contactUs" class="col-12 col-sm-4 col-md-4">

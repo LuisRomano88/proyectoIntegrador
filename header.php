@@ -1,4 +1,5 @@
 <!-- NOTE: Inicia header -->
+<script src="https://kit.fontawesome.com/46027ca747.js" crossorigin="anonymous"></script>
     <!-- NOTE: Nav sacado de bootstrap -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-darkblack">
       <a class="navbar-brand" href="home.php"> <img src="img/leon_logo.png" class="logo" alt="logo Majestic"> <span class="ml-3 pt-2">MAJESTIC</span> </a>
@@ -13,6 +14,9 @@
           </li>
           <li class="nav-item active">
             <a class="nav-link" href="catalog.php"> Catalog <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="myPurchase.php"> <i class="fas fa-cart-plus"></i> My purchase <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">User</a>
