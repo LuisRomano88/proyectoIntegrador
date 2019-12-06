@@ -135,14 +135,22 @@ if ($_POST) {
     }
   }
 
-  // REGISTRAR
-  // ********** Inicia FUNCION **********
-  if($flag){
-    $idUser = crearRegistrarUsuario();
-    // ********** Inicia FUNCION **********
+  // VALIDAR que no exista el usario (vía email)
+  $emailExistence = null;
+  $flag = validarUsuarioExistente();
+  if(!$flag){
+    $emailExistence = "The email you entered already exists!";
+  }
 
-    //REDIRECCIONAR
-    header("location: perfilUsuario.php?id=$idUser");
+  //REGISTRAR
+  if($flag){
+    $idUser = registrarUsuario();
+    if (is_array($idUser)) {
+      $arrayImgErrors = $idUser;
+    } else {
+      //REDIRECCIONAR
+      header("location: perfilUsuario.php?id=$idUser");
+    }
   }
 }
 
@@ -157,7 +165,7 @@ if ($_POST) {
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="css/styleRegistration.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styleHome.css">
   <link href="https://fonts.googleapis.com/css?family=Muli:400,700,800&display=swap" rel="stylesheet">
   <title> Majestic Registration - Online Store</title>
@@ -173,7 +181,7 @@ if ($_POST) {
     <div class="signup-form-container">
 
       <!-- NOTE: Inicia registracion -->
-      <form role="form" id="register-form" autocomplete="off" action="registration.php" method="post">
+      <form role="form" id="register-form" autocomplete="off" action="registration.php" method="post" enctype="multipart/form-data">
         <div class="form-header">
           <h1 class="form-title mt-4 mb-4"> <i class="fa fa-user"></i> Sign Up</h1>
         </div>
@@ -300,6 +308,9 @@ if ($_POST) {
               if (isset($errorEmailFormat)){
                 echo $errorEmailFormat . "<br>";
               }
+              if (isset($emailExistence)){
+                echo $emailExistence . "<br>";
+              }
               ?>
             </span>
           </div>
@@ -340,6 +351,26 @@ if ($_POST) {
               </span>
             </div>
           </div>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
+            </div>
+
+            <div class="custom-file">
+              <input name="imagen" type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+              <label class="custom-file-label" for="inputGroupFile01">Choose profile picture</label>
+            </div>
+
+            <span class="help-block" id="error">
+              <?php if(isset($arrayImgErrors["loadError"])){
+                echo $arrayImgErrors["loadError"] . "<br>";
+              }
+              if(isset($arrayImgErrors["formatError"])){
+                echo $arrayImgErrors["formatError"] . "<br>";
+              }
+              ?>
+            </span>
+          </div>
         </div>
         <div class="form-footer">
           <button type="submit" class="btn btn-info">
@@ -359,7 +390,7 @@ if ($_POST) {
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/js/bootstrap.min.js" integrity="sha384-3qaqj0lc6sV/qpzrc1N5DC6i1VRn/HyX4qdPaiEFbn54VjQBEU341pvjz7Dv3n6P" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 </html>
