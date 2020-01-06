@@ -29,7 +29,7 @@ if (isset($_COOKIE["userName"])) {
       <li class="nav-item active">
         <a class="nav-link" href="catalog.php"> Catalog <span class="sr-only">(current)</span></a>
       </li>
-      <?php if (!isset($_SESSION["email"]) || !isset($_COOKIE["userName"])) : ?>
+      <?php if (!isset($_SESSION["email"]) && !isset($_COOKIE["userName"])) : ?>
         <li class="nav-item active">
           <a class="nav-link" href="registration.php">Registration</a>
         </li>
@@ -37,7 +37,7 @@ if (isset($_COOKIE["userName"])) {
       <li class="nav-item active">
         <a class="nav-link" href="myPurchase.php"> <i class="fas fa-cart-plus"></i> My purchase <span class="sr-only">(current)</span></a>
       </li>
-      <?php if (!isset($_SESSION["email"]) || !isset($_COOKIE["userName"])) : ?>
+      <?php if (!isset($_SESSION["email"]) && !isset($_COOKIE["userName"])) : ?>
         <li class="nav-item active">
           <a class="nav-link" href="login.php"> Login <span class="sr-only">(current)</span></a>
         </li>
