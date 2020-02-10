@@ -19,7 +19,7 @@ $name = $lastname = $dni = $phone = $city = $country = $username = $email = $img
   <link rel="stylesheet" href="css/styleHome.css">
   <link rel="stylesheet" href="css/styleRegistration.css">
   <link href="https://fonts.googleapis.com/css?family=Muli:400,700,800&display=swap" rel="stylesheet">
-  <title> Majestic User Profile - Online Store</title>
+  <title> Hassen User Profile - Online Store</title>
 </head>
 <body>
 

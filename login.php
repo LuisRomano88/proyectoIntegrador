@@ -84,7 +84,7 @@ if($_POST){
   <link rel="stylesheet" href="css/styleHome.css">
   <link rel="stylesheet" href="css/styleLogin.css">
   <link href="https://fonts.googleapis.com/css?family=Muli:400,700,800&display=swap" rel="stylesheet">
-  <title> Majestic Login - Online Store</title>
+  <title> Hassen Login - Online Store</title>
 </head>
 <body>
 
@@ -157,7 +157,7 @@ if($_POST){
                 <label class="custom-control-label" for="customCheck1">Remember me!</label>
               </div>
 
-              <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Sign in</button>
+              <button id="btnSignIn" class="btn btn-lg btn-info btn-block text-uppercase" type="submit">Sign in</button>
 
 
               <!-- Button trigger modal -->
@@ -179,7 +179,7 @@ if($_POST){
                       ...
                     </div>
                     <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary btn-lg btn-block" >Send me an email</button>                      
+                      <button type="button" class="btn btn-secondary btn-lg btn-block" >Send me an email</button>
                     </div>
                   </div>
                 </div>

@@ -108,6 +108,12 @@ body {
   background-color: #3b5998;
 }
 
+#btnSignIn {
+  background-color: #216583;
+  border-color: #216583;
+
+}
+
 /* Fallback for Edge
 -------------------------------------------------- */
 

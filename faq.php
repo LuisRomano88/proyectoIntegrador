@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="css/styleHome.css">
   <link rel="stylesheet" href="css/styleFaq.css">
   <link href="https://fonts.googleapis.com/css?family=Muli:400,700,800&display=swap" rel="stylesheet">
-  <title> Majestic F.A.Q. - Online Store</title>
+  <title> Hassen F.A.Q. - Online Store</title>
 </head>
 <body>
   <!-- NOTE: Inicia header -->

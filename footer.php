@@ -4,7 +4,7 @@
       <div id="aboutUs" class="col-12 col-sm-4 col-md-4">
         <h5>About Us</h5>
         <ul class="list-unstyled quick-links">
-          <li><a href="home.php"></i>Home</a></li>
+          <li><a href="homee.php"></i>Home</a></li>
           <li><a href="catalog.php"></i>Catalog</a></li>
           <li><a href="faq.php"></i>FAQ</a></li>
         </ul>

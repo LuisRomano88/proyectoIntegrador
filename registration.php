@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 require_once("funciones.php");
 
 $errorNameEmpty = $errorNameNumeric = $errorLastnameEmpty = $errorLastnameText = $errorLastnameText = $errorDniNumeric = $errorPhoneNumeric = $errorCityNumeric = $errorCountryNumeric = $errorUsernameEmpty = $errorUsernameCharacters = $errorUsernameText = $errorEmailEmpty = $errorEmailFormat = $errorPasswordEmpty = $errorPasswordNumber = $errorPasswordCharacters = $errorRePasswordEmpty = $errorRePasswordMatch = NULL;
@@ -148,6 +149,8 @@ if ($_POST) {
     if (is_array($idUser)) {
       $arrayImgErrors = $idUser;
     } else {
+      //Crear objeto Usuario:
+      $user = new UsuarioComun($name, $lastname, $username, $dni, $phone, $city, $country, $email, $password, $repassword);
       //REDIRECCIONAR
       header("location: perfilUsuario.php?id=$idUser");
     }
@@ -168,7 +171,7 @@ if ($_POST) {
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styleHome.css">
   <link href="https://fonts.googleapis.com/css?family=Muli:400,700,800&display=swap" rel="stylesheet">
-  <title> Majestic Registration - Online Store</title>
+  <title> Hassen Registration - Online Store</title>
 </head>
 <body>
   <!-- NOTE: Inicia header -->
@@ -373,7 +376,7 @@ if ($_POST) {
           </div>
         </div>
         <div class="form-footer">
-          <button type="submit" class="btn btn-info">
+          <button type="submit" class="btn btn-info mb-5">
             <span class="glyphicon glyphicon-log-in">Sign Me Up !</span>
           </button>
         </div>
@@ -382,7 +385,7 @@ if ($_POST) {
   </div>
 
   <!-- NOTE: inicia footer -->
-  <footer id="footer" class="mt-3 p-4">
+  <footer id="footer" class="mt-5 p-4">
     <?php require_once("footer.php"); ?>
   </footer>
   <!-- NOTE: fin footer -->

@@ -12,21 +12,37 @@
   <title> Hassen Home - Online Store</title>
 </head>
 <body>
-
   <!-- NOTE: Inicia header -->
-
   <header>
     <?php require_once("header.php"); ?>
   </header>
-
   <!-- NOTE: fin header -->
 
-  <!-- NOTE: inicia footer -->
+  <div class="container">
+    <div class="card m-3 p-3">
+      <div class="row no-gutters">
+        <div class="col-md-5">
+          <img src="img\HassenAccesorios\collar-3.jpg" class="card-img" alt="...">
+        </div>
+        <div class="col-md-6">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Material: Fantasía</p>
+            <p class="card-text">$300</p>
+            <p class="card-text">Efectivo/Mercado Pago</p>
+            <a href="#" class="btn btn-dark">Add to my purchase</a>
+          </div>
+        </div>
+      </div>
+    </div>
 
+  </div>
+
+
+  <!-- NOTE: inicia footer -->
   <footer id="footer" class="mt-3 p-4">
     <?php require_once("footer.php"); ?>
   </footer>
-
   <!-- NOTE: fin footer -->
 
   <!-- Optional JavaScript -->
@@ -36,3 +52,11 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 </html>
+
+
+<?php
+
+
+
+
+?>

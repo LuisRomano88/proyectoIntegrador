@@ -3,5 +3,5 @@
 unset($_SESSION["email"]);
 session_destroy();
 setcookie("userName", "", -1);
-header("Location: home.php");
+header("Location: homee.php");
 ?>
